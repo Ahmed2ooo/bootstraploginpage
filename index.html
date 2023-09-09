@@ -1,114 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="style.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
 </head>
+
 <body>
-<main>
-    <div class="contauner">
-            <div class="left">
-                <img src="computer.jpg"alt="img"/>
-            </div>
-            <div class="right">
-            <div class="right-icon">
-                <p>Sign in with</p>
-                <div class="icons">
-                    <i class="fa-brands fa-facebook-f icon "></i>
-                    <i class="fa-brands fa-twitter icon"></i>
-                    <i class="fa-brands fa-linkedin-in icon"></i>
-               
-                </div>   
-            </div>
-         
-                <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"><br/>
+    <main>
+        <div class="container">
+            <div class="d-flex p-5 w-100 flex align-items-center">
+                <div class="w-50">
+                    <img class="w-75" src="computer.jpg" alt="img" />
+                </div>
+                <div class="d-flex flex-column w-50">
+                    <div class="d-flex flex-row">
+                        <p>Sign in with</p>
+                        <div class="d-flex text-center px-3 ">
+                            <a href=""><i class="fa-brands fa-facebook-f icon "></i></a></i>
+                            <a href=""><i class="fa-brands fa-twitter icon ps-3"></i></a></i>
+                            <a href=""><i class="fa-brands fa-linkedin-in icon ps-3"></i></a></i>
+                        </div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+                    <div class="d-flex flex-column">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email"><br />
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="checked-boxs d-flex justify-content-between pt-3">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Remeber me</label>
+                                </div>
+                                <a href="#" class="text-secondary">ForgetPassword?</a>
+                            </div>
+                            <br />
+                            <button type="submit" class="btn btn-primary">LOGIN</button>
+                            <p class="p-form ">Dont have account?<a href="#">Regiester</a></p>
+                        </form>
                     </div>
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Remeber me</label>
-                    </div><br/>
-                    <button type="submit" class="btn btn-primary">LOGIN</button>
-                    <p class="p-form">Dont have account?<a href="#">Regiester</a></p>
-                  </form>
-         
+
+                </div>
             </div>
-
-    </div>
-       
-</main>
-<div class="container my-5">
-    <!-- Footer -->
-    <footer
-            class="text-center text-lg-start text-white"
-            style="background-color:#0d6efd"
-            >
-    <section class="p-3 pt-0">
-        <div class="row d-flex align-items-center">
-          <!-- Grid column -->
-          <div class="col-md-7 col-lg-8 text-center text-md-start">
-            <!-- Copyright -->
-            <div class="p-3">
-              © 2020 Copyright:
-              <a class="text-white" href="https://mdbootstrap.com/"
-                 >MDBootstrap.com</a
-                >
-            </div>
-            <!-- Copyright -->
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
-            <!-- Facebook -->
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-facebook-f"></i
-              ></a>
-
-            <!-- Twitter -->
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-twitter"></i
-              ></a>
-
-            <!-- Google -->
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-google"></i
-              ></a>
-
-            <!-- Instagram -->
-            <a
-               class="btn btn-outline-light btn-floating m-1"
-               class="text-white"
-               role="button"
-               ><i class="fab fa-instagram"></i
-              ></a>
-          </div>
-          <!-- Grid column -->
         </div>
-      </section>
-</footer>
-</div>
+    </main>
+    <footer>
+        <div class="footer bg-primary fixed-bottom">
+            <div class="container">
+                <div class="d-flex justify-content-between footers">
+                    <div class="p-3 text-white">
+                        ©2020 Copyright.
+                        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                    </div>
+                    <div class="d-flex justify-content-between text-center text-md-end">
+                        <a href="#" class="btn text-white btn-floating m-3"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#" class="btn text-white btn-floating m-3"><i class="fab fa-twitter"></i></a>
+
+                        <a href="#" class="btn text-white btn-floating m-3"><i class="fab fa-google"></i></a>
+
+                        <a href="#" class="btn text-white btn-floating m-3"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
